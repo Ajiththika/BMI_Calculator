@@ -60,19 +60,31 @@
 
                 <button type="submit" class="calculate-btn">Calculate BMI</button>
             </form>
+        </div>
 
-            <div id="result" class="result-section hidden">
+        <!-- Result Card (Initially Hidden) -->
+        <div id="result-card" class="result-card hidden">
+            <div id="result" class="result-section">
                 <div class="result-header">
-                    <h2>Your BMI is</h2>
+                    <h2>Your BMI Result</h2>
+                </div>
+                <div class="bmi-value-container">
                     <div id="bmi-value" class="bmi-value">--</div>
                 </div>
+
                 <div class="result-details">
-                    <p class="bmi-category-label">Category</p>
+                    <p class="bmi-category-label">Condition</p>
                     <div id="bmi-category" class="bmi-category tag">--</div>
                     <p id="bmi-description" class="bmi-description">
                         <!-- Description will be injected here -->
                     </p>
+
+                    <div id="diet-suggestions" class="diet-suggestions hidden">
+                        <h3>Tips for You:</h3>
+                        <p id="diet-text"></p>
+                    </div>
                 </div>
+                <!-- Recalculate button hidden as it's less needed when result is static, but can keep for clearing -->
                 <button id="recalculate-btn" class="recalculate-btn secondary-btn">Calculate Again</button>
             </div>
         </div>
