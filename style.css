@@ -507,3 +507,56 @@ header p {
 .cat-row.obese td:first-child {
     border-left: 4px solid var(--cat-obese);
 }
+
+/* Resources Page Styles */
+.resource-list,
+.simple-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.resource-list li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    transition: background-color 0.2s;
+}
+
+.resource-list li:hover {
+    background-color: #f8fafc;
+}
+
+.resource-list a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.resource-list strong {
+    display: block;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+    font-size: 1.05rem;
+}
+
+.resource-list span {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.simple-list li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-secondary);
+}
+
+.simple-list li::before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
